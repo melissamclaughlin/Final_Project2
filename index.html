@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<meta charset="UTF-8">
+	<meta name="description" content="Luxe Brewery">
+	<meta name="keywords" content="Beer, Design, HTML, CSS">
+	<meta name="author" content="Melissa McLaughlin">
+
+ 	<title>Luxe Brewery</title>
+ 		<link rel="stylesheet" href="css/style.css"/>
+ 		<link href='https://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+ 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<div class="popup">
+        <div class="popupWindow">
+                <div class="popup_txt">
+                        Are you 21 years of age or older?
+                </div>
+                <div class="oldenough">
+                        <h4>YES</h4></div>
+                <div class="notoldenough">
+                        <h4>NO</h4></div>
+                </div>
+        </div>
+</div>
+ 
+	<header id="header">
+	<div class="hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+ 		
+ 		<nav id="nav">
+ 			<ul>
+ 				<li><a href="#home" title="Next Section">HOME</a></li>
+ 				<li><a href="#ourstory" class="active" title="Next Section">OUR STORY</a></li>
+				<li><a href="#beers" title="Next Section">BEERS</a></li>
+				<img id="gem"<img src="images/whitegem.png">
+				<li><a href="#visit" title="Next Section">VISIT</a></li>
+ 				<li><a href="#events" title="Next Section">EVENTS</a></li>
+ 				<li><a href="#contact" title="Next Section">CONTACT</a></li>
+ 			</ul>
+		</nav>
+	</header>
+
+	<div id="home">
+ 		<div class="content">
+ 			<div id="logoimage">
+ 				<center><img src="images/logo3.png" width="750px" height="750px"></center>
+ 			</div>
+ 		</div>
+ 	</div>
+
+
+ 	<div id="ourstory">
+ 		<div class="content">
+ 			<h1>Our Story</h1>
+ 			<div class="ourstory"><h3>Starting with our flagship Luxe Lager, the portfolio of Luxe Brewery has grown to a wide-ranging collection of beers, always keeping an eye to traditional brewing techniques, even as Brewmaster Melissa McLaughlin and her team seek to push the boundaries of beer. It’s now easy to find a smooth Luxe Lager, hoppy Lost & Found IPA or Sweet & Salty Stout in your favorite watering holes. Each season brings beloved seasonals like our new Slope Strangers Ale!
+			Founded in 2014, Luxe Brewery has been a pioneer in craft brewing. After visiting countless breweries and beer festivals around the country, Melissa noticed that many of them were lacking personality and creativity. Luxe aims to standout from the competition and inspire its drinker!</h3><img class="bottleImage" src="images/bottle.png" height="500px" width ="333px">
+			</div>
+ 		</div> 
+ 			
+ 	</div> 
+
+	<div id="beers">
+ 		<div class="content">
+ 			<h1>Beers</h1>
+ 				<div class="beercolumn">
+ 					<h2>Slope Strangers Ale</h2> 
+ 						<h3>Light, medium-bodied golden ale with bready aroma and malt forward flavor. Luxe ale is brewed with two strains of Trappist yeast, one Belgian ale yeast and Belgian candi sugar. Fruity and spicy, it's smooth, drinkable and perfectly balanced.
+ 						</h3>
+ 				</div>
+   				<div class="beercolumn">
+   					<h2>Luxe Lager</h2>
+   						<h3>Luxe Lager is amber-gold in color and displays a firm malt center supported by a refreshing bitterness and floral hop aroma. Caramel malts show in the finish. We use six different grains to perfect a balanced flavor of malt and hops, and a special proprietary lager yeast to give Luxe Lager an exceptional, long-lasting smooth finish that's meant to be enjoyed all year long.
+   						</h3>
+   				</div>
+  				<div class="beercolumn">
+  					<h2>Lost & Found IPA</h2> 
+  						<h3>American IPA brewed with pale, red and caramel malts. This copper-colored ale is liberally hopped and dry hopped with Willamette and Columbus hops. The intense hop character adds more spice to the meal and makes it a perfect choice to team up with many spicy dishes.
+  						</h3>
+  				</div>
+ 		</div> 
+ 	</div> 
+
+ 	<div id="visit">
+ 		<div class="content">
+ 		<h1>Visit</h1>
+ 		<div class="visit"><h3>Our brewery is now open for tours and private events! Once an intimidating stretch of old warehouses and rough streets, Yonkers' Northside has grown around the Luxe Brewery to become a cultural destination. Book Small Batch Tours and find out when to visit us on the weekends below, and check out our Events page for a complete list of public events in our Tasting Room.</h3>
+ 		<span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.1291235874655!2d-73.90517264957045!3d40.93483717920674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f270e779356b%3A0x1cb7958f73656d0e!2s180+Main+St%2C+Yonkers%2C+NY+10707!5e0!3m2!1sen!2sus!4v1457651811628" width="600" height="315" frameborder="0" style="border:0" allowfullscreen></iframe></span>
+ 		</div>
+ 		</div> 
+ 	</div>
+
+	<div id="events">
+ 		<div class="content">
+ 			<h1>Events</h1>
+ 			<center><img class=".event" src="images/LUXEFEST.jpg" alt="Event Image" width="600" height="400"/></center>
+ 		</div>	 
+ 	</div> 
+
+
+ 	<div id="contact">
+ 	<h1>Contact Us</h1>
+ 		<div class="content">
+ 			<div class="form_wrapper">
+ 			<form class="user_form" action="contact.php" method="post">
+ 			<br><span><h3>Questions? Comments? Just saying hi? Drop us a line!</h3></span>
+ 			<form action="http://code.kimgoulbourne.com/mailto/send_email.php" method="post" target="form_response">
+  			<input type="hidden" name="to_email" value="melissamclaughlindesigns@gmail.com" />
+  			<input type="hidden" name="to_name" value="Melissa McLaughlin" />
+ 		 	<input type="hidden" name="to_subject" value="A Message about Luxe" />
+
+  				<br><input type="text" name="firstname" id="first_name" placeholder="First Name" />
+  				<br><input type="text" name="lastname" id="last_name" placeholder="Last Name" />
+  				<br><input type="email" name="email" id="email" placeholder ="Email" />
+  				<br><textarea class="textarea" placeholder= "Dear Luxe,"></textarea>
+  				<br><input type="submit" value="Submit" />
+ 
+			</form><!--
+			!--><div class="contactcoltwo">
+	 			<h3><br>180 Main Street Yonkers, NY 
+				<br>914.523.9089
+				<br>Hours of Operation: 
+				<br>Monday-Friday 4-8 PM
+				<br>Saturday 2 PM-12 AM
+				<br>Sunday Closed</h3> 
+	 		</div>
+	 	</div>
+ 	<script src="JS/main.js"></script>
+ 	</body>
+ </html>
+
+

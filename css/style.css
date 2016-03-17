@@ -1,0 +1,382 @@
+
+/*
+Project Name: Final Project
+Author: Melissa McLaughlin
+Front End Developer @GA in NYC
+*/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+@font-face{ 
+	font-family: 'Debby';
+	src: url('debby-webfont.eot');
+	src: url('debby-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('debby-webfont.woff') format('woff'),
+	     url('debby-webfont.ttf') format('truetype'),
+	     url('debby-webfont.svg#webfont') format('svg');
+}
+
+.content{ 
+	margin: 0 auto; 
+	width: 100%;
+	padding: 50px 0 0; 
+}
+
+.clear { clear: both; }
+
+#logoimage{
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.beercolumn {
+	float: left;
+	padding: 30px 40px 0 40px;
+	width: 33.3%;
+}
+
+.ourstory {
+	margin: 0 auto;
+	width: 575px;
+}
+
+.visit {
+	margin: 0 auto;
+	width: 575px;
+	padding-top: 15px;
+}
+
+.visit h3{
+	padding-bottom: 10px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+h1 {
+	font-family: 'Debby', sans-serif;
+	font-weight: 700;
+	font-size: 85px;
+	text-align: center;
+	letter-spacing: 2px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-family: 'News Cycle', sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	text-align: center;
+	font-weight: 700;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	font-family: 'News Cycle', sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	text-align: center;
+	margin: 5px 0;
+	padding: 0;
+}
+
+h4 {
+	font-family: 'News Cycle', sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	color: #000;
+	display: inline-block;
+}
+
+
+#gem {
+	display: inline-block;
+	height: 75px;
+	width: 75px;
+	vertical-align: middle;
+	padding-bottom: 5px;
+}
+
+#header {
+	width: 100%;
+	background-color: #000;
+	height: 80px;
+	position: fixed;
+	margin-top: 0px;
+	z-index: 1;
+}
+
+#nav { 
+	width: 100%;
+	text-align: center;
+	padding-top: 8px;
+	letter-spacing: 1.5px;
+}
+
+
+#nav ul {
+	margin: 0 auto;
+	padding: 0;
+}
+
+#nav ul li {
+	margin-top: 9px;
+	padding-left: 40px;
+	padding-right: 40px;
+	display: inline-block;
+	list-style: none;
+}
+
+#nav li a { 
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px; 
+	text-decoration: none; 
+	font-family: 'News Cycle', sans-serif;
+}
+
+#nav li a:hover { 
+	color: #ff377e;
+	font-weight: 700;
+	-webkit-transition: color .5s linear;
+    -moz-transition: color .5s linear;
+    -ms-transition: color .5s linear;
+    -o-transition: color .5s linear;
+    transition: color .5s linear; 
+}
+
+#home {
+	background:url('../images/HomeBG2.jpg') 100% 0 no-repeat fixed;
+	color: #fff;
+	height: 700px;
+	margin: 0;
+	padding: 0px 0 0px 0;
+	background-size: cover;
+}
+
+#ourstory {
+	background-color: #fff;
+	color: #000;
+
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#ourstory h1{
+	color: #ff377e;
+}
+
+#ourstory h3{
+	text-align: left;
+	vertical-align: middle;
+	display: inline-block;
+	width: 50%;
+}
+
+.bottleImage {
+	vertical-align: middle;
+	display: inline-block;
+	width: 50%;
+}
+
+#beers {
+	clear: both;
+	background:url('../images/OurStoryBG.jpg') 100% 0 no-repeat fixed;
+	background-color: #000;
+	color: #fff;
+	height: 700px;
+	padding: 100px 0 0 0;
+}
+
+#beers h1{
+	color: #ff377e;
+}
+
+#beers h3{
+	float: left;
+}
+
+
+#visit {
+	color: #ff377e;
+}
+
+#events {
+	background-color: #ff377e;
+	height: 700px;
+	margin: 0 auto;
+	color: #000;
+}
+
+#events h1{
+	color: #fff;
+}
+
+#contact {
+	background-color: #000;
+	color: #fff;
+	height: 700px;
+	padding: 100px 0;
+}
+
+#contact h1{
+	color: #ff377e;
+}
+
+.event {
+	border-color: #000;
+	border-width: 2px;
+
+	
+}
+
+input[type=text], [type=email] {
+	
+    width: 200px;
+    padding: 8px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 4px;
+    outline: none;
+}
+
+textarea {
+	display: inline-block;
+    width: 200px;
+    height: 100px;
+    padding: 8px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+    resize: none;
+}
+
+input[type=submit] {
+	background-color: #ff377e;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.popup{
+position:fixed;
+width: 100%;
+height: 100%;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+background-color:rgba(3,3,3,0.8);
+}
+
+.popuplogo{
+	width: 100px;
+	height: 100px;
+}
+
+.popupWindow{
+background-color: #fff;
+margin:0px auto;
+width: 40%;
+min-width: 400px;
+min-height: 300px;
+margin-top: 12%;
+text-align: center;
+box-shadow: 2px 2px 50px 10px #000;
+}
+ 
+.popup_txt{
+font-family: 'News Cycle', sans-serif;	
+font-size: 26px;
+font-weight:bold;
+margin: 10px;
+padding-top: 100px;
+color: #ff377e;
+}
+ 
+.popup_img{
+margin: 10px;
+}
+ 
+.oldenough h4 {
+float: left;
+padding-left: 150px; 
+}
+
+.notoldenough h4 {
+float: right;
+padding-right: 150px;
+}
+
+.form_wrapper{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.user_form {
+	display: inline-block;
+  	vertical-align: top;
+  	width: 50%;
+  	text-align: center;
+}
+
+.contactcoltwo {
+	display: inline-block;
+  	vertical-align: top;
+  	width: 50%;
+}
+
+.contactColTwo h3 {
+	font-family: 'News Cycle', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+	nav {
+		display: none;
+	}
+
+	#home {
+		margin: 0px;
+    	padding: 0px;
+    	width: auto;
+    	float: none;
+    }
+
+    #logoimage{
+    	margin: 0px;
+    	float: none;
+    }
+
+	.hamburger {
+		float: right;
+		width: 40px;
+	}
+
+	.hamburger span {
+		border-bottom: 4px solid white;
+		display: block;
+		height: 10px;
+	}
+}
