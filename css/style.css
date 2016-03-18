@@ -100,7 +100,7 @@ h4 {
 }
 
 
-#gem {
+.gem {
 	display: inline-block;
 	height: 75px;
 	width: 75px;
@@ -120,7 +120,6 @@ h4 {
 #nav { 
 	width: 100%;
 	text-align: center;
-	padding-top: 8px;
 	letter-spacing: 1.5px;
 }
 
@@ -132,8 +131,8 @@ h4 {
 
 #nav ul li {
 	margin-top: 9px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
 	display: inline-block;
 	list-style: none;
 }
@@ -157,31 +156,39 @@ h4 {
 }
 
 #home {
-	background:url('../images/HomeBG2.jpg') 100% 0 no-repeat fixed;
+	background:url('../images/HomeBG2.jpg') no-repeat center center;
 	color: #fff;
 	height: 700px;
 	margin: 0;
 	padding: 0px 0 0px 0;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 #ourstory {
 	background-color: #fff;
 	color: #000;
-
 	margin: 0 auto;
 	overflow: hidden;
 }
 
 #ourstory h1{
 	color: #ff377e;
+	padding-top: 50px;
 }
 
-#ourstory h3{
+.ourstory h3{
 	text-align: left;
 	vertical-align: middle;
 	display: inline-block;
 	width: 50%;
+}
+
+.visit h3{
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	width: 100%;
 }
 
 .bottleImage {
@@ -192,11 +199,11 @@ h4 {
 
 #beers {
 	clear: both;
+	overflow: auto;
 	background:url('../images/OurStoryBG.jpg') 100% 0 no-repeat fixed;
 	background-color: #000;
 	color: #fff;
-	height: 700px;
-	padding: 100px 0 0 0;
+	padding: 100px 0 100px;
 }
 
 #beers h1{
@@ -327,6 +334,7 @@ padding-right: 150px;
 }
 
 .form_wrapper{
+	background-color: #000;
 	width: 60%;
 	margin: 0 auto;
 }
@@ -350,6 +358,10 @@ padding-right: 150px;
 	font-size: 20px;
 }
 
+.hamburger {
+	display: none;
+}
+
 
 
 @media screen and (max-width: 767px) {
@@ -364,12 +376,42 @@ padding-right: 150px;
     	float: none;
     }
 
-    #logoimage{
-    	margin: 0px;
-    	float: none;
+    #logoimage img{
+    	width: 100%;
+    	height: auto;
+    	
     }
 
+    iframe {
+    	display: none;
+    }
+
+    .ourstory {
+    	display: block;
+		/*margin: 30px auto;*/
+		padding: 0;
+		width: auto;
+	}
+
+	.event {
+		width: 100%;
+		height: auto;
+	}
+
+	.bottleImage {
+		display: none;
+	}
+
+    .beercolumn {
+		display: block;
+		/*margin: 30px auto;*/
+		padding: 0;
+		float: none;
+		width: auto;
+	}
+
 	.hamburger {
+		display: block;
 		float: right;
 		width: 40px;
 	}
@@ -379,4 +421,75 @@ padding-right: 150px;
 		display: block;
 		height: 10px;
 	}
+
+	.hamburger ul {
+		display: none;
+		background-color: #000;
+	}
+
+	.hamburger ul li {
+		font-family: 'News Cycle', sans-serif;
+		font-weight: normal;
+		font-size: 16px;
+		color: #fff;
+	}
+
+	.hamburger:hover ul {
+		display: block;
+		position: relative;
+		left: -100px;
+		width: 400px;
+	}
+
+	#page-header {
+		background-color: #000;
+		color: #fff;
+		display: inline-block;
+		text-align: center;
+		
+	}
 }
+
+@media screen and (max-width: 766px) {
+	 #ourstory {
+    	margin: 0 auto;
+    	width: 100%;
+	}
+
+	.ourstory h3{
+		text-align: center;
+		float: none;
+		width: 100%;
+		padding: 30px;
+		padding: 30px;
+	}
+
+	.visit h3{
+		text-align: center;
+		float: none;
+		width: 100%;
+		padding: 30px;
+		padding: 30px;
+	}
+
+	.form_wrapper {
+		text-align: center;
+		float: none;
+		width: 100%;
+		padding: 30px;
+		padding: 30px;
+	}
+
+	.contactcoltwo {
+		clear: both;
+		text-align: center;
+		float: none;
+		width: 100%;
+		padding: 30px;
+		padding: 30px;
+	}
+}
+
+
+
+
