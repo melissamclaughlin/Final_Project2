@@ -425,15 +425,19 @@ padding-right: 150px;
 	.hamburger ul {
 		display: none;
 		background-color: #000;
+		list-style: none;
 	}
 
 	.hamburger ul li {
 		font-family: 'News Cycle', sans-serif;
 		font-weight: normal;
 		font-size: 16px;
-		color: #fff;
 	}
+	.hamburger ul li a{
+		text-decoration: none;
+		color: #fff;
 
+	}
 	.hamburger:hover ul {
 		display: block;
 		position: relative;
