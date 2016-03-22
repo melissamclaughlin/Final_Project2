@@ -386,14 +386,13 @@ padding-right: 150px;
     	display: none;
     }
 
-    .ourstory {
+    .ourstory, .visit{
     	display: block;
-		/*margin: 30px auto;*/
 		padding: 0;
 		width: auto;
 	}
 
-	.event {
+	#events img{
 		width: 100%;
 		height: auto;
 	}
@@ -405,7 +404,7 @@ padding-right: 150px;
     .beercolumn {
 		display: block;
 		/*margin: 30px auto;*/
-		padding: 0;
+		padding: 20px 30px 20px 30px;
 		float: none;
 		width: auto;
 	}
@@ -413,6 +412,8 @@ padding-right: 150px;
 	.hamburger {
 		display: block;
 		float: right;
+		padding-top: 10px;
+		padding-right: 10px;
 		width: 40px;
 	}
 
